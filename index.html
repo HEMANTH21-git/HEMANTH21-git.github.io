@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hemanth Kalluru</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: purple;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header nav button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        header nav button:hover {
+            opacity: 0.8;
+        }
+
+        .about img {
+            float: right;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color:purple;
+        }
+
+        .love {
+            color: orchid;
+            font-weight: bold;
+        }
+        .class{
+            height: 50px;
+
+        }
+        section{
+            height: max-content;
+            color: solid grey;
+        }
+        img{
+            width: 300px;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 700px;
+            margin: 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color:purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            opacity: 1.0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: purple;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+    <nav>
+        <a href="about"><button>About</button></a>
+        <a href="skills"><button>Skills</button></a>
+        <a href="contact"><button>Contact</button></a>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="about">
+        <h2 class="class">About Me</h2>
+        <img src="image.jpg" alt="Hemanth Kalluru" height="300" width="250">
+        <p>Hi everyone, this is <em>Hemanth Kalluru</em>, son of <em class="love">K. Jagannadham</em>.</p>
+        <p>Currently pursuing Bachelors in Artificial intelligence and data science  in  <em>Marwadi University</em>.</p>
+        <p>My goal is to crack the civil services exam and reach higher sectors.</p>
+        <p>My hobbies include playing badminton, cricket, reading books, listening to music, and sometimes playing games.</p>
+        <p>The skills I want to improve are coding-related knowledge and learning about new technologies.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ol>
+            <li>C Language</li>
+            <li>C++ Language</li>
+            <li>Python and HTML Basics</li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to connect, feel free to contact me!</p>
+    </section>
+
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p><b>Choose your gender:</b></p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <p><b>Select your interests:</b></p>
+        <input type="checkbox" id="coding" name="interest" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="reading" name="interest" value="reading">
+        <label for="reading">Reading</label>
+
+        <br>
+
+        <label for="bio">Bio (up to 100 characters):</label>
+        <input type="text" id="bio" name="bio" maxlength="100">
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+<footer>
+    <p>© My Portfolio 2025</p>
+</footer>
+
+</body>
+</html>
+         
